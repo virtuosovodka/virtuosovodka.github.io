@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedika Sheth | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">VS</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Vedika Sheth</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title">Computer Science Student</span>
+                    <span class="hero-divider">|</span>
+                    <span class="hero-title">AI Developer</span>
+                    <span class="hero-divider">|</span>
+                    <span class="hero-title">Cybersecurity Enthusiast</span>
+                </div>
+                <p class="hero-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Portland, OR
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="avatar-ring">
+                            <div class="avatar">VS</div>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.0</span>
+                                <span class="stat-label">GPA</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">750+</span>
+                                <span class="stat-label">Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">I'm a Computer Science student at Oregon State University's Honors College, passionate about leveraging technology to solve real-world problems.</p>
+                    <p>Currently pursuing a B.S. in Computer Science with a focus on Cybersecurity (Security Operations Track), I combine technical expertise with a drive for community impact. From AI-assisted development to martial arts instruction, I bring dedication and curiosity to everything I do.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Azure ML Studio</span>
+                            <span class="skill-tag">OpenAI APIs</span>
+                            <span class="skill-tag">Unity</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Salesforce</span>
+                            <span class="skill-tag">Claude Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="education-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                        <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                    </svg>
+                </div>
+                <div class="education-details">
+                    <h3>Oregon State University</h3>
+                    <p class="education-program">Honors College | B.S. in Computer Science</p>
+                    <p class="education-track">Option in Cybersecurity: Security Operations Track</p>
+                    <div class="education-meta">
+                        <span class="education-date">2025 - 2028</span>
+                        <span class="education-gpa">GPA: 4.0</span>
+                    </div>
+                    <div class="coursework">
+                        <h4>Relevant Coursework</h4>
+                        <p>AP Computer Science A, AP Calculus BC, AP Statistics, Linear Algebra, AP Physics C: Mechanics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Technical Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI-Assisted Software Developer</h3>
+                            <span class="timeline-date">2025 - Present</span>
+                        </div>
+                        <p class="timeline-company">Oregon State University Supercomputing Center</p>
+                        <ul class="timeline-details">
+                            <li>Collaborating with the Director of Supercomputing Operations on AI-assisted coding workflows using Claude Code to develop research tools.</li>
+                            <li>Built <strong>Spectater</strong>, a system that analyzes tabular data and contractual requirement documents to identify Certificate of Insurance compliance with specified requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Professional Program Graduate</h3>
+                            <span class="timeline-date">2024 - 2025</span>
+                        </div>
+                        <p class="timeline-company">Microsoft x Great Learning</p>
+                        <ul class="timeline-details">
+                            <li>Completed 3 end-to-end hands-on projects, leveraging Azure ML Studio, Azure OpenAI / OpenAI APIs, and GitHub.</li>
+                            <li>Constructed solutions for data ingestion, preprocessing, model training (ML/DL), deployment, and monitoring (MLOps) on Azure.</li>
+                            <li>Gained skills in: Python, SQL, prompt engineering, and model pipeline orchestration.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Marketing and Data Intern</h3>
+                            <span class="timeline-date">Summer 2024</span>
+                        </div>
+                        <p class="timeline-company">Rose Haven Day Shelter Development Team</p>
+                        <ul class="timeline-details">
+                            <li>Organized donor databases through Salesforce to streamline communications with 100+ donors.</li>
+                            <li>Designed and posted 10+ social media posts weekly, increasing event visibility for PRIDE and Food For Thought.</li>
+                            <li>Wrote a donor engagement report to improve fundraising strategy and outreach effectiveness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Computer Science Team Developer</h3>
+                            <span class="timeline-date">2022 - 2024</span>
+                        </div>
+                        <p class="timeline-company">Oregon Game Project Challenge</p>
+                        <ul class="timeline-details">
+                            <li>Co-led development of two interactive VR games (Cake Game and Pizza Escape); handled gameplay logic and design integration.</li>
+                            <li>Collaborated using Unity, C#, and GitHub to build immersive gameplay experiences.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Book and Product Reviewer</h3>
+                            <span class="timeline-date">2020 - Present</span>
+                        </div>
+                        <p class="timeline-company">Amazon & Goodreads</p>
+                        <ul class="timeline-details">
+                            <li>Reviewed 750+ books across genres on Amazon and Goodreads, partnering with 50+ authors for pre-release feedback.</li>
+                            <li>Selected for the Amazon Vine Program to test and review early-release products.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="section community" id="community">
+        <div class="container">
+            <h2 class="section-title">Community Engagement</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Rose Haven Day Shelter</h3>
+                    <p class="community-role">Event Committee Co-Chair & Grant Writer</p>
+                    <p class="community-date">2023 - 2025</p>
+                    <ul class="community-details">
+                        <li>Authored a $5,000 grant proposal for Costco Wholesale</li>
+                        <li>Contributed to raising $250K+ at the Food For Thought event</li>
+                        <li>Co-led event committee; spoke about land acknowledgement and helped organize awareness campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Tang Soo Do & Ki Gong</h3>
+                    <p class="community-role">Disciple & Teacher</p>
+                    <p class="community-date">2021 - Present</p>
+                    <ul class="community-details">
+                        <li>Taught weekly martial arts classes to students ages 3-55</li>
+                        <li>Earned First-Degree Black Belt</li>
+                        <li>Won multiple national and regional medals for staff form, open-hand forms, and free sparring</li>
+                        <li>Assisted with studio database management and event coordination</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section awards" id="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="award-card">
+                <div class="award-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6"></circle>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                </div>
+                <div class="award-details">
+                    <h3>NCWIT Honorable Mention</h3>
+                    <p class="award-org">National Center for Women & Information Technology</p>
+                    <p class="award-region">SW Washington and Oregon | 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">I'm always open to discussing new opportunities, collaborations, or just having a conversation about tech!</p>
+            <div class="contact-grid">
+                <a href="mailto:vedikasheth.18@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <span>vedikasheth.18@gmail.com</span>
+                </a>
+                <a href="tel:+19712276747" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <span>(971) 227-6747</span>
+                </a>
+                <a href="https://linkedin.com/in/vedikasheth/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vedika Sheth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
