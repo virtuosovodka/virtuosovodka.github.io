@@ -65,7 +65,17 @@ flowElements.forEach(el => {
 // ====== Parallax Scrolling Effects ======
 let ticking = false;
 
+// Check if device is mobile/small screen
+function isMobile() {
+    return window.innerWidth <= 968;
+}
+
 function updateParallax() {
+    // Disable parallax on mobile to prevent overlap issues
+    if (isMobile()) {
+        return;
+    }
+
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
 
@@ -177,8 +187,10 @@ window.addEventListener('scroll', () => {
 
 // ====== Mouse Move Parallax for Hero ======
 const heroSection = document.querySelector('.hero');
-if (heroSection) {
+if (heroSection && !isMobile()) {
     heroSection.addEventListener('mousemove', (e) => {
+        if (isMobile()) return; // Double check on each event
+
         const { clientX, clientY } = e;
         const { innerWidth, innerHeight } = window;
 
