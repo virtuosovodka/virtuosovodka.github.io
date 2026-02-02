@@ -351,6 +351,55 @@ document.querySelectorAll('.clickable-card').forEach(card => {
     });
 });
 
+// ====== Back to Top Button ======
+const backToTop = document.getElementById('backToTop');
+
+if (backToTop) {
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top when clicked
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// ====== Scroll Indicator Click ======
+const scrollIndicator = document.getElementById('scrollIndicator');
+
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+
+    // Also handle keyboard accessibility
+    scrollIndicator.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    });
+}
+
 // ====== Console Easter Egg ======
 console.log('%cHey there!', 'font-size: 24px; font-weight: bold; color: #993955;');
 console.log('%cThanks for checking out my portfolio!', 'font-size: 14px; color: #0B5563;');
