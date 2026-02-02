@@ -1137,13 +1137,45 @@ body {
         padding: 28px 20px;
     }
 
+    .avatar-ring {
+        width: 200px;
+        height: 200px;
+    }
+
     .card-stats {
-        flex-direction: column;
-        gap: 16px;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .stat-number {
+        font-size: 22px;
+    }
+
+    .stat-label {
+        font-size: 11px;
     }
 
     .btn {
         width: 100%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .hero-name {
+        font-size: 36px;
+    }
+
+    .hero-title-wrapper {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .hero-divider {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 14px;
     }
 
     .contact-grid {
@@ -1153,6 +1185,64 @@ body {
 
     .contact-card {
         justify-content: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .timeline-header h3 {
+        font-size: 16px;
+    }
+
+    .click-hint {
+        display: none;
+    }
+
+    .community-card {
+        padding: 24px;
+    }
+
+    .community-card h3 {
+        font-size: 18px;
+    }
+
+    .popup-modal {
+        padding: 28px 20px;
+        margin: 16px;
+        width: calc(100% - 32px);
+    }
+
+    .popup-link {
+        padding: 14px 16px;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ====== iPhone specific fixes ====== */
+@supports (-webkit-touch-callout: none) {
+    /* iOS Safari specific */
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+
+    body {
+        -webkit-text-size-adjust: 100%;
     }
 }
 
