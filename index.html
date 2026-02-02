@@ -69,7 +69,7 @@
                     <div class="card-glow"></div>
                     <div class="card-content">
                         <div class="avatar-ring">
-                            <div class="avatar">VS</div>
+                            <img src="Senior Pic 2024 copy.jpeg" alt="Vedika Sheth" class="avatar-img">
                         </div>
                         <div class="card-stats">
                             <div class="stat">
@@ -81,8 +81,8 @@
                                 <span class="stat-label">Languages</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">750+</span>
-                                <span class="stat-label">Reviews</span>
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Projects</span>
                             </div>
                         </div>
                     </div>
@@ -167,11 +167,11 @@
         <div class="container">
             <h2 class="section-title">Technical Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item clickable-card" data-popup="supercomputer">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>AI-Assisted Software Developer</h3>
+                            <h3>AI-Assisted Software Developer <span class="click-hint">Click to visit</span></h3>
                             <span class="timeline-date">2025 - Present</span>
                         </div>
                         <p class="timeline-company">Oregon State University Supercomputing Center</p>
@@ -214,11 +214,11 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item clickable-card" data-popup="vrgames">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Computer Science Team Developer</h3>
+                            <h3>Computer Science Team Developer <span class="click-hint">Click to visit</span></h3>
                             <span class="timeline-date">2022 - 2024</span>
                         </div>
                         <p class="timeline-company">Oregon Game Project Challenge</p>
@@ -229,11 +229,11 @@
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item clickable-card" data-popup="reviewer">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Book and Product Reviewer</h3>
+                            <h3>Book and Product Reviewer <span class="click-hint">Click to visit</span></h3>
                             <span class="timeline-date">2020 - Present</span>
                         </div>
                         <p class="timeline-company">Amazon & Goodreads</p>
@@ -253,13 +253,8 @@
             <h2 class="section-title">Community Engagement</h2>
             <div class="community-grid">
                 <div class="community-card">
-                    <div class="community-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
+                    <div class="community-icon community-icon-img">
+                        <img src="rose haven.png" alt="Rose Haven" class="icon-image">
                     </div>
                     <h3>Rose Haven Day Shelter</h3>
                     <p class="community-role">Event Committee Co-Chair & Grant Writer</p>
@@ -272,10 +267,8 @@
                 </div>
 
                 <div class="community-card">
-                    <div class="community-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
+                    <div class="community-icon community-icon-img">
+                        <img src="tsd.webp" alt="Tang Soo Do" class="icon-image">
                     </div>
                     <h3>Tang Soo Do & Ki Gong</h3>
                     <p class="community-role">Disciple & Teacher</p>
@@ -335,12 +328,8 @@
                     <span>(971) 227-6747</span>
                 </a>
                 <a href="https://linkedin.com/in/vedikasheth/" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                            <rect x="2" y="9" width="4" height="12"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
+                    <div class="contact-icon contact-icon-img">
+                        <img src="linkedin.jpg" alt="LinkedIn" class="contact-logo">
                     </div>
                     <span>LinkedIn</span>
                 </a>
@@ -354,6 +343,16 @@
             <p>&copy; 2025 Vedika Sheth. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-modal" id="popupModal">
+            <button class="popup-close" id="popupClose">&times;</button>
+            <div class="popup-content" id="popupContent">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
