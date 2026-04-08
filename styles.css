@@ -668,10 +668,17 @@ body {
 }
 
 /* ====== Certifications Section ====== */
-.certification-card {
-    max-width: 800px;
+.certifications-grid {
+    max-width: 900px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 24px;
+}
+
+.certification-card {
     display: flex;
+    flex-direction: column;
     gap: 24px;
     padding: 32px;
     background: var(--white);
@@ -688,7 +695,6 @@ body {
 .certification-icon {
     width: 64px;
     height: 64px;
-    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -741,6 +747,32 @@ body {
     left: 0;
     color: var(--pink-main);
     font-weight: 600;
+}
+
+.certification-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition-base);
+}
+
+.certification-link:hover {
+    background: var(--pink-main);
+    color: var(--white);
+    transform: translateX(4px);
+}
+
+.certification-link svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* ====== Timeline / Experience ====== */
@@ -1182,8 +1214,11 @@ body {
         justify-content: center;
     }
 
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
     .certification-card {
-        flex-direction: column;
         text-align: center;
     }
 
@@ -1193,6 +1228,10 @@ body {
 
     .certification-period {
         display: inline-block;
+    }
+
+    .certification-link {
+        justify-content: center;
     }
 }
 
