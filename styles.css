@@ -692,6 +692,10 @@ body {
     box-shadow: var(--shadow-xl), var(--shadow-glow);
 }
 
+.certification-card.clickable-card {
+    cursor: pointer;
+}
+
 .certification-icon {
     width: 64px;
     height: 64px;
@@ -773,6 +777,13 @@ body {
 .certification-link svg {
     width: 16px;
     height: 16px;
+}
+
+.certification-summary {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-top: 8px;
 }
 
 /* ====== Timeline / Experience ====== */

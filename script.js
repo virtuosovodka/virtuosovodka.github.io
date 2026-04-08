@@ -295,6 +295,23 @@ const popupData = {
                 url: 'https://spectater.arcs.oregonstate.edu/'
             }
         ]
+    },
+    greatlearning: {
+        title: 'Microsoft x Great Learning Professional Program',
+        subtitle: 'View the credential and ePortfolio:',
+        links: [
+            {
+                icon: 'greatlearning',
+                iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>`,
+                title: 'Great Learning ePortfolio',
+                desc: 'View credentials and end-to-end ML projects',
+                url: 'https://www.mygreatlearning.com/eportfolio/vedika-sheth'
+            }
+        ]
     }
 };
 
