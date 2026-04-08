@@ -667,6 +667,82 @@ body {
     line-height: 1.6;
 }
 
+/* ====== Certifications Section ====== */
+.certification-card {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    padding: 32px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+}
+
+.certification-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+.certification-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--blue-light);
+    color: var(--pink-main);
+}
+
+.certification-details h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 8px;
+}
+
+.certification-issuer {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-bottom: 4px;
+}
+
+.certification-period {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.certification-details-list {
+    list-style: none;
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+.certification-details-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.certification-details-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--pink-main);
+    font-weight: 600;
+}
+
 /* ====== Timeline / Experience ====== */
 .timeline {
     position: relative;
@@ -1104,6 +1180,19 @@ body {
 
     .education-meta {
         justify-content: center;
+    }
+
+    .certification-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certification-icon {
+        margin: 0 auto;
+    }
+
+    .certification-period {
+        display: inline-block;
     }
 }
 
