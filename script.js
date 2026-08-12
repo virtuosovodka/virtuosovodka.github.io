@@ -296,6 +296,22 @@ const popupData = {
             }
         ]
     },
+    trueai: {
+        title: 'Adversarial Attacks on Multi-Agent LLM Systems',
+        subtitle: 'Learn more about the research:',
+        links: [
+            {
+                icon: 'trueai',
+                iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>`,
+                title: 'TRUE-AI Lab',
+                desc: 'Research on secure multi-agent LLM systems',
+                url: 'https://true-lab.ai/'
+            }
+        ]
+    },
     greatlearning: {
         title: 'Microsoft x Great Learning Professional Program',
         subtitle: 'View the credential and ePortfolio:',
@@ -315,7 +331,7 @@ const popupData = {
     },
     ursa: {
         title: 'Privacy-Enhancing Form Services Research',
-        subtitle: 'View research presentation:',
+        subtitle: 'View research and presentation:',
         links: [
             {
                 icon: 'poster',
@@ -328,6 +344,16 @@ const popupData = {
                 title: 'OSU Spring Symposium Poster',
                 desc: 'Research on security tradeoffs for activist organizations',
                 url: 'Poster.pdf'
+            },
+            {
+                icon: 'research',
+                iconSvg: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>`,
+                title: 'Faculty Advisor',
+                desc: 'Dr. Glencora Borradaile - Research mentorship',
+                url: 'https://web.engr.oregonstate.edu/~borradae/'
             }
         ]
     }
