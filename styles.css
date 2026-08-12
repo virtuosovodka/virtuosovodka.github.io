@@ -328,33 +328,39 @@ body {
     flex-wrap: wrap;
 }
 
+.hero-card-link {
+    text-decoration: none;
+}
+
 .hero-socials {
     display: flex;
-    gap: 24px;
-    margin-top: 16px;
-    justify-content: flex-start;
-    font-size: 14px;
+    gap: 16px;
+    margin-top: 12px;
+    justify-content: center;
 }
 
-.hero-social-link {
+.hero-social-icon {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--gray-700);
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    color: var(--pink-main);
     text-decoration: none;
     transition: var(--transition-base);
-    font-weight: 500;
 }
 
-.hero-social-link:hover {
-    color: var(--pink-main);
-    transform: translateY(-2px);
+.hero-social-icon:hover {
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    transform: translateY(-4px);
 }
 
-.hero-social-link svg {
-    width: 16px;
-    height: 16px;
-    color: var(--pink-main);
+.hero-social-icon svg {
+    width: 20px;
+    height: 20px;
 }
 
 /* ====== Buttons ====== */

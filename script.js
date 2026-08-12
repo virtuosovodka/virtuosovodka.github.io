@@ -341,9 +341,9 @@ const popupData = {
                     <line x1="12" y1="19" x2="12" y2="5"></line>
                     <line x1="9" y1="14" x2="15" y2="14"></line>
                 </svg>`,
-                title: 'OSU Spring Symposium Poster',
+                title: 'Spring Symposium Poster',
                 desc: 'Research on security tradeoffs for activist organizations',
-                url: 'Poster.pdf'
+                url: './Poster.pdf'
             },
             {
                 icon: 'research',
