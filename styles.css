@@ -328,6 +328,37 @@ body {
     flex-wrap: wrap;
 }
 
+.hero-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    justify-content: flex-start;
+}
+
+.hero-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    color: var(--pink-main);
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.hero-link-icon:hover {
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    transform: translateY(-4px);
+}
+
+.hero-link-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* ====== Buttons ====== */
 .btn {
     display: inline-flex;
@@ -1189,6 +1220,10 @@ body {
     }
 
     .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-links {
         justify-content: center;
     }
 
